@@ -11,35 +11,37 @@ namespace ChallengePostageCalculatorHelperMethods
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
 
-        protected void groundRadioButton_CheckedChanged(object sender, EventArgs e)
+        protected void handleChange(object sender, EventArgs e)
         {
-
+            performCalculation();
         }
 
-        protected void airRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void performCalculation()
         {
-
+            ValuesExist();
+            calculateVolume(out volume);
+            resultLabel.Text = calculateCost();
         }
 
-        protected void nextDayRadioButton_CheckedChanged(object sender, EventArgs e)
+        //Are there values in the textboxes?
+        private void ValuesExist()
         {
-
+            
         }
 
-        // Method to retrieve textBox values and store them in variables
+        //Can we parse those values into height, width?
+        private void calculateVolume(out object volume)
+        {
+            
+        }
 
-
-
-        // Method to calculated textBox values times multiplier
-
-
-
-        // Method to display result
-
-
-
+        //Calculated the volume * shipping method
+        private string calculateCost()
+        {
+            
+        }
     }
 }

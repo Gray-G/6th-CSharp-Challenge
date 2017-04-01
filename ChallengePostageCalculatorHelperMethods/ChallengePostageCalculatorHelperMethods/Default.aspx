@@ -10,6 +10,27 @@
     <form id="form1" runat="server">
     <div>
     
+        Postal Calculator<br />
+        <br />
+        Width:&nbsp;
+        <asp:TextBox ID="widthTextBox" runat="server" AutoPostBack="True" OnTextChanged="widthTextBox_TextChanged"></asp:TextBox>
+        <br />
+        Height:&nbsp;
+        <asp:TextBox ID="heightTextBox" runat="server" AutoPostBack="True" OnTextChanged="heightTextBox_TextChanged"></asp:TextBox>
+        <br />
+        Length:&nbsp;
+        <asp:TextBox ID="lengthTextBox" runat="server" AutoPostBack="True" OnTextChanged="lengthTextBox_TextChanged"></asp:TextBox>
+        <br />
+        <br />
+        <asp:RadioButton ID="groundRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="groundRadioButton_CheckedChanged" Text="Ground" />
+        <br />
+        <asp:RadioButton ID="airRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="airRadioButton_CheckedChanged" Text="Air" />
+        <br />
+        <asp:RadioButton ID="nextDayRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="nextDayRadioButton_CheckedChanged" Text="Next Day" />
+        <br />
+        <br />
+        <asp:Label ID="resultLabel" runat="server"></asp:Label>
+    
     </div>
     </form>
 </body>
