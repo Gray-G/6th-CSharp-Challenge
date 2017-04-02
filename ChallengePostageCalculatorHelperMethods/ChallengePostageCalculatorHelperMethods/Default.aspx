@@ -13,20 +13,20 @@
         Postal Calculator<br />
         <br />
         Width:&nbsp;
-        <asp:TextBox ID="widthTextBox" runat="server" AutoPostBack="True" OnTextChanged="widthTextBox_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="widthTextBox" runat="server" AutoPostBack="True" OnTextChanged="handleChange"></asp:TextBox>
         <br />
         Height:&nbsp;
-        <asp:TextBox ID="heightTextBox" runat="server" AutoPostBack="True" OnTextChanged="heightTextBox_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="heightTextBox" runat="server" AutoPostBack="True" OnTextChanged="handleChange"></asp:TextBox>
         <br />
         Length:&nbsp;
-        <asp:TextBox ID="lengthTextBox" runat="server" AutoPostBack="True" OnTextChanged="lengthTextBox_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="lengthTextBox" runat="server" AutoPostBack="True" OnTextChanged="handleChange"></asp:TextBox>
         <br />
         <br />
-        <asp:RadioButton ID="groundRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="groundRadioButton_CheckedChanged" Text="Ground" />
+        <asp:RadioButton ID="groundRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="handleChange" Text="Ground" />
         <br />
-        <asp:RadioButton ID="airRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="airRadioButton_CheckedChanged" Text="Air" />
+        <asp:RadioButton ID="airRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="handleChange" Text="Air" />
         <br />
-        <asp:RadioButton ID="nextDayRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="nextDayRadioButton_CheckedChanged" Text="Next Day" />
+        <asp:RadioButton ID="nextDayRadioButton" runat="server" AutoPostBack="True" GroupName="shippingType" OnCheckedChanged="handleChange" Text="Next Day" />
         <br />
         <br />
         <asp:Label ID="resultLabel" runat="server"></asp:Label>
